@@ -15,6 +15,7 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<spring-boot.version>2.1.5.RELEASE</spring-boot.version>
+		<mysql-connector-java.version>8.0.13</mysql-connector-java.version>
 		<java.version>1.8</java.version>
 	</properties>
 	<dependencyManagement>
@@ -34,6 +35,18 @@
 				<artifactId>spring-boot-starter-test</artifactId>
 				<version>${spring-boot.version}</version>
 				<scope>test</scope>
+			</dependency>
+			<!--jpa操作-->
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-data-jpa</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
+			<!--mysql连接器-->
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>${mysql-connector-java.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
