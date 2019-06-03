@@ -16,6 +16,8 @@
 	<properties>
 		<spring-boot.version>2.1.5.RELEASE</spring-boot.version>
 		<mysql-connector-java.version>8.0.13</mysql-connector-java.version>
+		<bootstrap.version>3.0.3</bootstrap.version>
+		<jquery.versions>2.0.3</jquery.versions>
 		<java.version>1.8</java.version>
 	</properties>
 	<dependencyManagement>
@@ -28,6 +30,11 @@
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter-web</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-thymeleaf</artifactId>
 				<version>${spring-boot.version}</version>
 			</dependency>
 			<dependency>
@@ -47,6 +54,17 @@
 				<groupId>mysql</groupId>
 				<artifactId>mysql-connector-java</artifactId>
 				<version>${mysql-connector-java.version}</version>
+			</dependency>
+			<!--webjars-->
+			<dependency>
+				<groupId>org.webjars.bower</groupId>
+				<artifactId>jquery</artifactId>
+				<version>${jquery.versions}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.webjars.bower</groupId>
+				<artifactId>bootstrap</artifactId>
+				<version>${bootstrap.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
