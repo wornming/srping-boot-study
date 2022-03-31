@@ -15,7 +15,7 @@
 	<name>srping-boot-study</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<spring-boot.version>2.1.5.RELEASE</spring-boot.version>
+		<spring-boot.version>2.5.12</spring-boot.version>
 		<mysql-connector-java.version>8.0.13</mysql-connector-java.version>
 		<bootstrap.version>3.0.3</bootstrap.version>
 		<jquery.versions>2.0.3</jquery.versions>
